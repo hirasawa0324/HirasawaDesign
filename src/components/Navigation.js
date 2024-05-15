@@ -10,10 +10,6 @@ import { gsap } from 'gsap';
 
 const navigationMenu = [
   {
-    href: '#skills',
-    label: 'skills',
-  },
-  {
     href: 'works',
     label: 'Works',
   },
