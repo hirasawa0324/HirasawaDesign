@@ -21,7 +21,7 @@ export default function SearchField() {
   return (
     <div className="relative flex items-center border border-gray-200 rounded-full w-[600px]">
       <div className="absolute left-3 top-1/2 transform -translate-y-1/2">
-        <Image src="/assets/Search.svg" width={24} height={24} alt="Search Icon" />
+        {/* <Image src="/assets/Search.svg" width={24} height={24} alt="Search Icon" /> */}
       </div>
       <input
         type="search"

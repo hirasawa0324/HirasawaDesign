@@ -22,5 +22,13 @@
     "technologies": ["デザイン", "コーデイング", "WordPress","GSAP"],
     "days": 40,
     "url": "https://test.project-th1987.com/"
+  },
+  {
+    "id": 4,
+    "image": "/assets/web_04.png",
+    "title": "Project Two",
+    "technologies": ["デザイン", "コーデイング", "next.js","microCMS","Tailwind CSS","GSAP"],
+    "days": 30,
+    "url": "https://hirasawa-design.vercel.app/"
   }
 ]
