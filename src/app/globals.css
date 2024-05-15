@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'M PLUS 1 Code';
+  src: url('/fonts/mplus-1-code-regular.woff2') format('woff2'),
+       url('/fonts/mplus-1-code-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'M PLUS 1 Code';
+  src: url('/fonts/mplus-1-code-bold.woff2') format('woff2'),
+       url('/fonts/mplus-1-code-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: 'M PLUS 1 Code', sans-serif;
+}
+
 .swiper {
     width: 100%;
     padding-top: 50px;

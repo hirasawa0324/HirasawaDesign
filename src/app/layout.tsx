@@ -1,8 +1,9 @@
+import Head from 'next/head';
 import type { Metadata } from "next";
 import { M_PLUS_1_Code } from "next/font/google";
 import "./globals.css";
-import Navigation from "../components/Navigation"
-import Footer from "../components/Footer"
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
 const m_PLUS_1_Code = M_PLUS_1_Code({ subsets: ["latin"] });
 
@@ -18,11 +19,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <body className={m_PLUS_1_Code.className}>
         <Navigation />
         {children}
         <Footer />
-        </body>
+      </body>
     </html>
   );
 }
