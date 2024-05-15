@@ -39,7 +39,7 @@ function Hero() {
         "
         >
           {/* 左 */}
-          <div className="lg:w-5/12 mb-10 lg:mb-0">
+          <div className="lg:w-6/12 mb-10 lg:mb-0">
             <span
               className='inline-block py-1 pl-1 text-heading font-semibold relative mb-2 before:content-[" "] before:absolute before:w-2/3 before:bg-pinkLight before:left-0 before:top-0 before:bottom-0 before:z-[-1]'
               data-aos="fade-up"
