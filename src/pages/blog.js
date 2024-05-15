@@ -1,4 +1,3 @@
-// pages/index.js
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import "../app/globals.css";

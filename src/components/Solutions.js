@@ -62,7 +62,7 @@ function Solutions() {
                 >
                   <Image
                     src={img}
-                    layout="fill"
+                    fill
                     objectFit="cover"
                     alt={`img${index + 1}`}
                     className="shadow-lg "
