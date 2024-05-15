@@ -1,5 +1,5 @@
 // components/Sidebar.js
-import Category from "./category";
+import Category from "./Category";
 import PopularArticles from "./PopularArticles";
 import Tags from "./Tags";
 function Sidebar() {
