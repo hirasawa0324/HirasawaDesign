@@ -63,13 +63,15 @@ export default function BlogPage({ posts, tags, currentPage, totalPages }) {
             <li key={post.id} className="p-5">
               <Link href={`/blog/${post.id}`} legacyBehavior>
                 <a className="flex gap-8">
-                  <Image
+                <Image
                     className="rounded-xl"
                     src={post.eyecatch.url}
                     alt={post.title}
                     width={300}
                     height={200}
+                    loading="lazy"
                   />
+
                   <div>
                     <h3 className="text-2xl font-bold mb-4">{post.title}</h3>
                     <p className="bg-gray-200 rounded-md px-2 py-1 w-fit mb-3">{post.category.name}</p>
