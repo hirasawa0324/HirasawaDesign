@@ -10,15 +10,15 @@ import { gsap } from 'gsap';
 
 const navigationMenu = [
   {
-    href: 'works',
+    href: '/works',
     label: 'Works',
   },
   {
-    href: 'blog',
+    href: '/blog',
     label: 'Blog',
   },
   {
-    href: 'contact',
+    href: '/contact',
     label: 'Contact',
   },
 ];
