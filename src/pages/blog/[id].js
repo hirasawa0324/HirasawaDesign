@@ -1,6 +1,6 @@
 import { client } from "../../libs/client";
-import Navigation from "../../components/Navigation";
-import Footer from "../../components/Footer";
+import Navigation from "../../components/Navigation"
+import Footer from "../../components/Footer"
 import "../../app/globals.css";
 import Sidebar from "../../components/Sidebar";
 import { AiOutlineClockCircle, AiOutlineTags, AiOutlineUser } from "react-icons/ai";
@@ -12,6 +12,9 @@ import Image from "next/image";
 
 export default function BlogId({ blog }) {
   const yearsSinceUpdate = differenceInCalendarYears(new Date(), parseISO(blog.updatedAt));
+
+  // `tags`が配列であることを確認し、存在しない場合は空の配列を設定
+  const tags = Array.isArray(blog.tags) ? blog.tags : [];
 
   return (
     <main>
@@ -35,7 +38,7 @@ export default function BlogId({ blog }) {
             <p className="bg-gray-200 rounded-md px-2 py-0 w-fit">{blog.category.name}</p>
             <div className="flex items-center gap-1">
               <AiOutlineTags />
-              <p>{blog.tags.map(tag => `#${tag.name}`).join(', ')}</p>
+              <p>{tags.map(tag => `#${tag.name}`).join(', ')}</p>
             </div>
           </div>
           <div className="flex gap-3">
@@ -62,12 +65,14 @@ export default function BlogId({ blog }) {
   );
 }
 
+// 静的生成のためのパスを指定
 export const getStaticPaths = async () => {
   const data = await client.get({ endpoint: "blogs" });
   const paths = data.contents.map((content) => `/blog/${content.id}`);
   return { paths, fallback: false };
 };
 
+// データをテンプレートに受け渡す部分の処理
 export const getStaticProps = async (context) => {
   const id = context.params.id;
   const data = await client.get({ endpoint: "blogs", contentId: id });
