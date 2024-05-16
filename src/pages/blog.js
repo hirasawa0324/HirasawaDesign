@@ -70,6 +70,7 @@ export default function BlogPage({ posts, tags, currentPage, totalPages }) {
                     width={300}
                     height={200}
                     loading="lazy"
+                    fetchpriority="low"
                   />
 
                   <div>

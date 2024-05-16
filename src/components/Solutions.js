@@ -63,8 +63,8 @@ function Solutions() {
                   <Image
                     src={img}
                     fill
-                    objectFit="cover"
                     alt={`img${index + 1}`}
+                    style={{ objectFit: 'cover' }}
                     className="shadow-lg "
                   />
                 </div>

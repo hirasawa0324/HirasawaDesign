@@ -4,6 +4,7 @@ import { M_PLUS_1_Code } from "next/font/google";
 import "./globals.css";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import Script from 'next/script';  // 追加
 
 const m_PLUS_1_Code = M_PLUS_1_Code({ subsets: ["latin"] });
 
@@ -29,6 +30,22 @@ export default function RootLayout({
         <Navigation />
         {children}
         <Footer />
+        {/* Google Analyticsのスクリプトを追加 */}
+        <Script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-2HF45D1J75`}
+        />
+        <Script
+          id="google-analytics"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-2HF45D1J75');
+            `,
+          }}
+        />
       </body>
     </html>
   );

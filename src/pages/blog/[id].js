@@ -32,6 +32,7 @@ export default function BlogId({ blog }) {
             alt={blog.title}
             width={600}
             height={337}
+            fetchpriority="high" 
           />
           <h1 className="font-bold text-3xl mt-12 mb-4">{blog.title}</h1>
           <div className="flex mb-3 gap-3">
