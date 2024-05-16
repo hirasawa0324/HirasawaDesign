@@ -1,10 +1,10 @@
-"use client"
+"use client";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import "../app/globals.css";
-import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import TwitterIcon from "../components/TwitterIcon";
 
 const Contact = () => {
     const [name, setName] = useState('');
@@ -14,7 +14,7 @@ const Contact = () => {
     const [error, setError] = useState('');
     const [success, setSuccess] = useState(false);
     const [loading, setLoading] = useState(false);
-
+    const twitterHandle = "https://twitter.com/ActionCourage8"; // ここにあなたのTwitterハンドルを入力
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -49,7 +49,6 @@ const Contact = () => {
             setLoading(false);  // ローディング状態を終了
         }
     };
-    
 
     return (
         <div className="flex flex-col min-h-screen">
@@ -57,14 +56,14 @@ const Contact = () => {
             <main className="flex-grow">
                 <div className="max-w-3xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
                     <div className="">
-                    <Image
-                        src="/assets/miles-burke.jpg"
-                        width={397}
-                        height={306}
-                        alt="img1"
-                        className="object-cover text-centerx w-full rounded-2xl mb-8"
-                        data-aos="fade-right"
-                    />
+                        <Image
+                            src="/assets/miles-burke.jpg"
+                            width={397}
+                            height={306}
+                            alt="img1"
+                            className="object-cover text-centerx w-full rounded-2xl mb-8"
+                            data-aos="fade-right"
+                        />
                     </div>
                     <h1 className="text-4xl font-bold mb-8">コンタクト</h1>
                     <form onSubmit={handleSubmit} className="space-y-6">
@@ -122,7 +121,14 @@ const Contact = () => {
                                 私は人間です
                             </label>
                         </div>
-                        {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
+                        {error && (
+                            <div className="mt-2">
+                                <p className="text-red-500 text-sm">{error}</p>
+                                <p className="text-sm">
+                                    送信ができない場合は、<a href={`https://twitter.com/messages/compose?recipient_id=${twitterHandle}`} className="text-blue-500" target="_blank" rel="noopener noreferrer">Twitterより</a>ご連絡ください。
+                                </p>
+                            </div>
+                        )}
                         {success && <p className="text-green-500 text-sm mt-2">メールが送信されました。</p>}
                         <button
                             type="submit"
@@ -138,8 +144,13 @@ const Contact = () => {
                                 '送信'
                             )}
                         </button>
-
                     </form>
+                    <div className="mt-8">
+                        <p className="text-center">メールが送れないときの連絡は下記までお願いします。</p>
+                        <div className="flex justify-center mt-4">
+                            <TwitterIcon twitterHandle={twitterHandle} />
+                        </div>
+                    </div>
                 </div>
             </main>
             <Footer />
