@@ -58,7 +58,7 @@ export default function BlogId({ blog }) {
                   __html: `${formatRichText(blog.content)}`,
                 }}
               />
-              <ShareButtons title={blog.title} url={`https://yourdomain.com/blog/${blog.id}`} />
+              <ShareButtons title={blog.title} url={`https://hirasawa-design.vercel.app/blog/${blog.id}`} />
         </div>
         <div className="col-span-1">
           <Sidebar />
