@@ -4,7 +4,7 @@ import { FaTwitter } from 'react-icons/fa';
 
 const TwitterIcon = ({ twitterHandle }) => {
     return (
-        <Link href={`https://twitter.com/messages/compose?recipient_id=${twitterHandle}`} legacyBehavior>
+        <Link href={`${twitterHandle}`} legacyBehavior>
             <a
                 target="_blank"
                 rel="noopener noreferrer"
