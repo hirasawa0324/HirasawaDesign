@@ -13,7 +13,7 @@
     "image": "/assets/web_03.png",
     "title": "Cals Rock様",
     "technologies": ["デザイン", "コーデイング", "WordPress", "GSAP"],
-    "days": 40,
+    "days": 30,
     "url": "https://calsrock.sakura.ne.jp/"
   },
   {
@@ -28,7 +28,7 @@
       "Tailwind CSS",
       "GSAP"
     ],
-    "days": 30,
+    "days": 14,
     "url": "https://hirasawa-design.vercel.app/"
   }
 ]
