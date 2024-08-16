@@ -1,12 +1,5 @@
 [
-  {
-    "id": 1,
-    "image": "/assets/web_01.png",
-    "title": "[架空サイト：コーポレートサイト]",
-    "technologies": ["コーデイング", "GSAP", "HTML", "CSS"],
-    "days": 14,
-    "url": "https://project-th1987.com/portfolio/"
-  },
+
   {
     "id": 2,
     "image": "/assets/web_02.png",
