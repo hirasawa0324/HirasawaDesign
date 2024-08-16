@@ -3,7 +3,7 @@
     "id": 1,
     "image": "/assets/web_01.png",
     "title": "[架空サイト：コーポレートサイト]",
-    "technologies": ["コーデイング","GSAP", "HTML", "CSS"],
+    "technologies": ["コーデイング", "GSAP", "HTML", "CSS"],
     "days": 14,
     "url": "https://project-th1987.com/portfolio/"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "image": "/assets/web_02.png",
     "title": "報国寺様",
-    "technologies": ["コーデイング","WordPress", "Swiper"],
+    "technologies": ["コーデイング", "WordPress", "Swiper"],
     "days": 14,
     "url": "https://houkokuji.or.jp/"
   },
@@ -19,15 +19,22 @@
     "id": 3,
     "image": "/assets/web_03.png",
     "title": "Cals Rock様",
-    "technologies": ["デザイン", "コーデイング", "WordPress","GSAP"],
+    "technologies": ["デザイン", "コーデイング", "WordPress", "GSAP"],
     "days": 40,
-    "url": "https://test.project-th1987.com/"
+    "url": "https://calsrock.sakura.ne.jp/"
   },
   {
     "id": 4,
     "image": "/assets/web_04.png",
     "title": "ポートフォリオサイト",
-    "technologies": ["デザイン", "コーデイング", "next.js","microCMS","Tailwind CSS","GSAP"],
+    "technologies": [
+      "デザイン",
+      "コーデイング",
+      "next.js",
+      "microCMS",
+      "Tailwind CSS",
+      "GSAP"
+    ],
     "days": 30,
     "url": "https://hirasawa-design.vercel.app/"
   }
